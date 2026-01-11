@@ -1,0 +1,31 @@
+.container>*{
+    border: 2px solid gold;
+    background: #5bbb66;
+    padding: 15px;
+    color: antiquewhite;
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: navbar;
+}
+main{
+    grid-area: main;
+}
+#advertise{
+    grid-area: advertise;
+}
+footer{
+    grid-area: footer;
+}
+.container{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+     "header         header           header         header"
+     "navbar          main             main           sidebar"
+     "navbar          main              main           advertise"
+     "footer          footer            footer          footer "
+    ;
+}
