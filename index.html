@@ -31,6 +31,22 @@
             grid-column: span 1;
             grid-row: span 1;
         }
+        @media screen and (max-width:576px){
+            .container{
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(1, 1fr);
+            /* grid-template-rows: repeat(1, 250px); */
+        }
+        .big-layout, 
+        .normal-layout,
+         .small-layout, 
+         .wide-layout{
+               grid-column: span 1;
+               grid-row: span 1;
+        }
+    }
+
     </style>
 </head>
 <body>
