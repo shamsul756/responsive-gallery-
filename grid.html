@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid-layout</title>
+    <style>
+           .container{
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 200px) 50px 50px;
+        }
+           .box{
+              background: #f4f;
+              padding: 10px;
+           }
+     .box2{
+        grid-row: span 5;
+        background-color: #f4f;
+     }
+     .footer{
+        grid-column: span 3;
+        background: #f4f;
+     }
+     @media screen and (max-width:576px) {
+           .container{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(1, 50px) 25px 25px;
+            
+        }
+        .box, .box2, .footer{
+            padding: 10px;
+        }
+     }
+    </style>
+
 </head>
 <body>
-    
-    
+    <div class="container">
+    <div class="box2"> item -1</div>
+    <div class="box"> item -1</div>
+    <div class="box"> item -1</div>
+    <div class="box"> item -1</div>
+    <div class="box"> item -1</div>
+    <div class="box"> item -1</div>
+    <div class="box"> item -1</div> 
+    <div class="box"> item -1</div>
+    <div class="box"> item -1</div>
+     <div class="footer"> item -1</div>
+    <div class="footer"> item -1</div>
+    <div class="footer"> item -1</div>
+   
+
+    </div>
 </body>
 </html>
